@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logoepico{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; 
+    z-index: 9999; 
+    animation: fadeInOut 2.6s ease forwards;
+
+}
+.logoepico img{
+    position: absolute;
+    animation: fadeInOut 2.3s ease forwards;
+
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background: rgb(24, 24, 24);
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 70px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    float: left;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+nav a {
+    width: 100px;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: slideFromLeft 2s ease forwards;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.video-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.secondcarrusel{
+    position: relative;
+    width: 80%;
+    margin: 80px auto; 
+    text-align: center;
+}
+  
+.text-container, .image-container {
+    display: inline-block; 
+    width: 45%;
+    vertical-align: middle; 
+    text-align: left;
+    animation: slideFromLeft 2s ease forwards;
+
+}
+  
+.text, .image {
+    width: 80%;
+    opacity: 1;
+    max-width: 100%;
+  height: auto;
+  display: block;
+  animation: slideFromLeft 2s ease forwards;
+}
+  
+
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    left: 0;
+    color: black;
+}
+  
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    right: 0;
+    color: black;
+}
+  
+.read-more {
+    display: block;
+    margin-top: 10px; 
+    color: black; 
+    text-decoration: none; 
+}
+  
+.read-more span {
+    margin-left: 5px; 
+}
+  
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.image-with-content {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    animation: slideFromLeft 2s ease forwards;
+}
+.image-with-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.zoom {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    transition: transform 0.5s ease; 
+}
+
+.zoom:hover img {
+    transform: scale(1.1);
+
+}
+
+.content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h2{
+    margin: 0;
+    animation: slideFromLeft 2s ease forwards;
+    font-size: 0.8333333333333334em;
+    margin: 10px;
+    font-weight: 800;
+}
+.content p {
+    font-size: 0.5833333333333334em;
+    margin: 0;
+    animation: slideFromLeft 2.4s ease forwards;
+    font-weight: 400;
+}
+
+.content button {
+    background-color: transparent;
+    border: none; 
+    color: white;    
+    cursor: pointer;
+    animation: slideFromLeft 2s ease forwards;
+    font-size: 0.5em;
+}
+
+.content button:hover {
+    transition: 0.6;
+
+}
+
+.divider {
+    background-color: #303030; 
+    color: #ffffff; 
+    padding: 80px;
+    text-align: center;
+}
+
+.divider h2 {
+    margin-top: 0; 
+}
+
+.btn-red {
+    background-color: #EA6C62;
+    color: #ffffff;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 0.4583333333333333em;
+}
+
+.btn-red:hover {
+    background-color: #DA291C; 
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #181818; 
+    padding: 30px 0; 
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.column {
+    flex: 1;
+    max-width: 200px; 
+}
+
+.column h3 {
+    margin-top: 0;
+    font-size: 0.5em; 
+    color: white;
+}
+
+.column p {
+    margin: 10;
+    font-size: 0.4166666666666667em;
+    color: white;
+}
+
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #181818; 
+    padding: 30px 0; 
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.column2 {
+    flex: 1;
+    max-width: 200px; 
+}
+.column2 p {
+    margin: 10;
+    font-size: 0.4166666666666667em;
+    color: white;
+}
+
+.column2 h2 {
+    margin-top: 0;
+    font-size:  0.4583333333333333em;
+    color: white;
+    font-weight: 100;
+}
+
+.column2 img{
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+}
+
+.cuartos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #181818;
+    padding: 30px 0; 
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #646464;
+}
+.cuartos p{
+    font-size: 0.25em;
+    max-width: 300px;
+}
+
+.semifinal {
+    background-color: #303030; 
+    color: white;
+    text-align: left;
+    padding: 10px 0; 
+    padding-left: 20%;
+    padding-right: 26%;
+}
+
+
+.semifinal a {
+    color: white;
+    text-decoration: none; 
+    margin-right:15px; 
+    font-size: 0.375em;
+}
+.semifinal a:hover {
+    text-decoration: underline; 
+}
+
+.final{
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #181818;
+    padding: 3px 0;
+}
+
+.final img{
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0; 
+        transform: translateX(-200%); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInOut {
+   
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .logoepico img {
+        max-width: 30%; 
+        max-height: 30%;
+        left: 37%;
+        top: 40%;
+    }
+
+   
+}
+
+@media(min-width: 601px) {
+    .logoepico img {
+        max-width: 10%; 
+        max-height: 10%;
+        left: 49%;
+        top: 45%;
+    }
+
+
+}
+
